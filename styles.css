@@ -1,0 +1,152 @@
+/* Universal Styling */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #ffa07a;
+}
+
+/* Navbar */
+nav {
+  background-color: #008080;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 20px 40px 10px 40px;
+  color: #ffa07a;
+}
+
+.nav-links a {
+  color: #ffa07a;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: #ff7948;
+}
+
+.hero p {
+  background-color: #7f503d;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Mission */
+.mission,
+.community-gallery {
+  margin: 15px 10px;
+}
+
+.mission-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fffe20;
+}
+
+.mission-statement {
+  font-size: 0.86rem;
+  color: seashell;
+  margin: 15px 0;
+}
+
+/* Mission Gallery */
+.mission-gallery,
+.community-gallery {
+  display: flex;
+}
+
+.mission-gallery article,
+.community-gallery article {
+  text-align: center;
+}
+
+.gallery-img img {
+  width: 80%;
+  margin: 1.5%;
+}
+
+/* Testimonal */
+.testimonial {
+  height: 200px;
+  margin-top: 40px;
+  background-color: #008080;
+  color: #ffff00;
+}
+
+.testimonial blockquote h2 {
+  padding: 50px 0 0 15px;
+  font-size: 1.5rem;
+}
+
+.testimonial blockquote footer p {
+  margin: 15px 0 15px 15px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Community Gallery */
+
+.community-gallery {
+  margin: 60px 0;
+}
+
+/* Meetup */
+
+.meet-up {
+  text-align: center;
+  color: #ffff00;
+  font-size: 1.2rem;
+}
+
+.meet-up h2 {
+  margin: 15px 0;
+}
+
+.meet-up-img img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 975px) {
+  .mission {
+    margin: 0;
+  }
+
+  .mission p {
+    margin: 15px 10px;
+  }
+
+  .mission-gallery,
+  .community-gallery {
+    flex-direction: column;
+  }
+
+  .mission-gallery article {
+    text-align: left;
+  }
+
+  .gallery-img img {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
